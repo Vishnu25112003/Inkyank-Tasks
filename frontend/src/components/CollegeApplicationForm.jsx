@@ -55,7 +55,7 @@ const CollegeApplicationForm = () => {
     setSubmitStatus('idle');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/applications', {
+      const response = await axios.post('https://inkyank-tasks-dpzs.onrender.com/api/applications', {
         ...formData,
         gpa: parseFloat(formData.gpa),
         testScore: parseInt(formData.testScore)
